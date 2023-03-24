@@ -1,2 +1,2 @@
 # BasicJavaAidl
-Basic AIDL Client-Server communication in Java
+Basic AIDL Client App in Java
