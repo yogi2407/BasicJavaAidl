@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myaidlsamplecilent.MainActivity">
+
+
+    <TextView
+        android:id="@+id/outputStr"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:background="@color/yellow"
+
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <EditText
+        android:id="@+id/EditFirstNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputStr"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/EditSecondNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/EditFirstNum"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/Add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditSecondNum"
+        android:layout_marginTop="61dp"
+        android:layout_marginLeft="50dp"
+        android:text="ADD"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <Button
+        android:id="@+id/Sub_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditSecondNum"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="59dp"
+        android:layout_toRightOf="@id/Add_button"
+        android:text="SUBTRACT"
+        tools:layout_editor_absoluteX="473dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <Button
+        android:id="@+id/multiply_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Add_button"
+        android:layout_marginTop="98dp"
+        android:layout_marginLeft="50dp"
+        android:text="MULTIPLE"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <Button
+        android:id="@+id/divide_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sub_button"
+        android:layout_marginTop="98dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@id/multiply_Button"
+        android:text="DIVIDE"
+        tools:layout_editor_absoluteX="473dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <Button
+        android:id="@+id/startActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/multiply_Button"
+        android:layout_marginTop="98dp"
+        android:layout_centerHorizontal="true"
+        android:text="StartActivity" />
+
+
+</RelativeLayout>
